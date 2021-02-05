@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CanvasButtons : MonoBehaviour {
     
-    public Sprite btn, btnPressed, musicOn, musicOff;
+    public Sprite btn, btnPressed, musicOn, musicOff, pauseOn, pauseOff;
     private Image image;
+    public GameObject homeBtn, musBtn;
+
     void Start()
     {
         image = GetComponent<Image>();
@@ -14,7 +16,6 @@ public class CanvasButtons : MonoBehaviour {
         {
             if (PlayerPrefs.GetString("music") == "No")
                 transform.GetChild(0).GetComponent<Image>().sprite = musicOff;
-
         }
     }
     public void MusicButton()
@@ -74,6 +75,37 @@ public class CanvasButtons : MonoBehaviour {
     {
         if (PlayerPrefs.GetString("music") != "No")
             GetComponent<AudioSource>().Play();
+    }
+    public void PauseBtn()
+    {
+        if (PlayerPrefs.GetString("pause") == "No")
+        {
+            PlayerPrefs.SetString("pause", "Yes");
+            transform.GetChild(0).GetComponent<Image>().sprite = pauseOn;
+            Time.timeScale = 0f;
+            homeBtn.SetActive(true);
+            musBtn.SetActive(true);
+
+        }
+        else
+        {
+            PlayerPrefs.SetString("pause", "No");
+            transform.GetChild(0).GetComponent<Image>().sprite = pauseOff;
+            Time.timeScale = 1f;
+            homeBtn.SetActive(false);
+            musBtn.SetActive(false);
+        }
+    }
+    public void LearnBtn()
+    {
+        StartCoroutine(LoadScene("Study"));
+        PlayButtonSound();
+    }
+    public void HomeBtn()
+    {
+        StartCoroutine(LoadScene("Main"));
+        Time.timeScale = 1f;
+        PlayButtonSound();
     }
 
 }

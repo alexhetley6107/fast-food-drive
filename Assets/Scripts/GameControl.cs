@@ -22,6 +22,7 @@ public class GameControl : MonoBehaviour
     [NonSerialized] public static int countLoses;
     private static bool isAdd;
     public GameObject adsManager;
+    public GameObject pauseCanvas;
 
 
     private void Start()
@@ -30,8 +31,7 @@ public class GameControl : MonoBehaviour
         {
             Instantiate(adsManager, Vector3.zero, Quaternion.identity);
             isAdd = true;
-        }
-        
+        }      
 
         if (PlayerPrefs.GetInt("NowMap") == 2)
         {
@@ -67,7 +67,7 @@ public class GameControl : MonoBehaviour
 
         StartCoroutine(CreateHorn());
    }
-    private void Update()
+    public void Update()
     {
         if (CarControl.isLose && !isLoseOnce)
         {
@@ -76,31 +76,31 @@ public class GameControl : MonoBehaviour
             StopCoroutine(leftCars);
             StopCoroutine(rightCars);
             StopCoroutine(upCars);
+            pauseCanvas.SetActive(false);
+            canvasLosePanel.SetActive(true);
+
+            isLoseOnce = true;
+
             nowScore.text = "<color=#F65757>Score: </color>" + CarControl.countCars.ToString();
             if (PlayerPrefs.GetInt("Score") < CarControl.countCars)
                 PlayerPrefs.SetInt("Score", CarControl.countCars);
-
             topScore.text = "<color=#F65757>Top Score:</color>" + PlayerPrefs.GetInt("Score").ToString();
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + CarControl.countCars);
             coinsCount.text = PlayerPrefs.GetInt("Coins").ToString();
 
-            canvasLosePanel.SetActive(true);
-            isLoseOnce = true;
+            
             instCars = 0;
             foreach (GameObject k in cars)
             {
                 k.GetComponent<CarControl>().speed = 7f;
             }
             x = 1;
-        }
-        
+        }        
         if (instCars >= 10*x  ) {
             foreach (GameObject k in cars)            
-                k.GetComponent<CarControl>().speed += 2f;
-               
-            x++;
-                     
-        }        
+                k.GetComponent<CarControl>().speed += 2f;               
+            x++;                     
+        }       
     }
    IEnumerator BottomCars() {
         while (true) {

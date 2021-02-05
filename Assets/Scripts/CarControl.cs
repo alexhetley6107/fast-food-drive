@@ -59,9 +59,9 @@ public class CarControl : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100f, carLayer)) {
             string carName = hit.transform.gameObject.name;
 #if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0) && !isMovingFast && gameObject.name == carName)
+            if (Input.GetMouseButtonDown(0) && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No")
 #else
-            if (Input.GetTouch(0).phase == TouchPhase.Began && !isMovingFast && gameObject.name == carName)
+            if (Input.GetTouch(0).phase == TouchPhase.Began && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No")
 #endif
             {
                 GameObject vfx = Instantiate(exhaut, 
@@ -120,7 +120,8 @@ public class CarControl : MonoBehaviour
         if (carCrashed)
             return;
 
-        if (other.transform.CompareTag("Trigger Pass")) {
+        if (other.transform.CompareTag("Trigger Pass"))
+        {
             if (carPassed)
                 return;
 
@@ -128,8 +129,10 @@ public class CarControl : MonoBehaviour
             Collider[] colliders = GetComponents<BoxCollider>();
             foreach (Collider col in colliders)
                 col.enabled = true;
+
             countCars++;
-                    }
+        }
+
         if (other.transform.CompareTag("TurnBlock Right") && rightTurn)
             carRb.rotation = Quaternion.Euler(0, originRotationY + 90f, 0);
         else if (other.transform.CompareTag("TurnBlock Left") && leftTurn)
