@@ -5475,11 +5475,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5128374102811497080}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 3.4368935, y: 1.4622142, z: 2.3640223}
-  m_Center: {x: 0, y: 1.1601841, z: 4.3837295}
+  m_Size: {x: 3.4368935, y: 1.4622142, z: 3}
+  m_Center: {x: 0.0000026459845, y: 1.1601841, z: 4}
 --- !u!82 &5129314483776017281
 AudioSource:
   m_ObjectHideFlags: 0

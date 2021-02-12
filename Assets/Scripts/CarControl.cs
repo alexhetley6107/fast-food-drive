@@ -8,7 +8,7 @@ public class CarControl : MonoBehaviour
 {
     public AudioClip crash;
     public AudioClip[] accelerates;
-    public float speed = 7f, force = 900f;
+    public float speed = 6f, force = 900f;
     private Rigidbody carRb;
     public bool rightTurn = false, leftTurn = false, moveFromUp;
     private float originRotationY, rotMultRight = 7f, rotMultLeft = 5f;
@@ -19,6 +19,7 @@ public class CarControl : MonoBehaviour
     [NonSerialized] public static bool isLose;
     public GameObject turnLeftSignal, turnRightSignal, explotion, exhaut;
     [NonSerialized] public static int countCars;
+
     
 
     private void Start()
@@ -44,7 +45,7 @@ public class CarControl : MonoBehaviour
     {
         carRb.MovePosition(transform.position - transform.forward * speed * Time.fixedDeltaTime);
         
-    }    
+    }
     private void Update()
     {
 #if UNITY_EDITOR
@@ -56,17 +57,18 @@ public class CarControl : MonoBehaviour
 #endif
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 100f, carLayer)) {
+        if (Physics.Raycast(ray, out hit, 100f, carLayer))
+        {
             string carName = hit.transform.gameObject.name;
 #if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0) && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No")
+            if (Input.GetMouseButtonDown(0) && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No" && CanvasButtons.rayOffScene == false)
 #else
-            if (Input.GetTouch(0).phase == TouchPhase.Began && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No")
+            if (Input.GetTouch(0).phase == TouchPhase.Began && !isMovingFast && gameObject.name == carName && PlayerPrefs.GetString("pause") == "No"&& CanvasButtons.rayOffScene == false)
 #endif
             {
-                GameObject vfx = Instantiate(exhaut, 
-                    new Vector3(transform.position.x, transform.position.y +1.5f, transform.position.z), 
-                    Quaternion.Euler(90f,0,0)) as GameObject;
+                GameObject vfx = Instantiate(exhaut,
+                    new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z),
+                    Quaternion.Euler(90f, 0, 0)) as GameObject;
                 Destroy(vfx, 2f);
 
                 speed *= 3f;
@@ -78,10 +80,13 @@ public class CarControl : MonoBehaviour
                 }
             }
         }
-    }
+        
+
+    }    
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Car") && !carCrashed) {
+        if (other.gameObject.CompareTag("Car") && !carCrashed) 
+        {
             carCrashed = true;
             isLose = true;
             speed = 0f;
@@ -103,7 +108,9 @@ public class CarControl : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Car") && other.GetComponent<CarControl>().carPassed) 
-            other.GetComponent<CarControl>().speed = speed + 5f;           
+            other.GetComponent<CarControl>().speed = speed + 5f;
+
+       
     }    
     private void OnTriggerStay(Collider other)
     {

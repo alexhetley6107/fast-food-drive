@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - IsNoAds
     - MovementFirstCar
     - SecondCar
+    - StopCars
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
     Unity.Postprocessing.Runtime.dll:
@@ -41,6 +42,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -101,33 +110,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11644}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11770}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12024}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12378}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13386}
+    - Class: 114
+      Script: {instanceID: 13410}
     - Class: 114
       Script: {instanceID: 13576}
     - Class: 114
@@ -193,6 +204,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -200,51 +213,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11644}
+      Script: {instanceID: 11642}
+    - Class: 114
+      Script: {instanceID: 11768}
     - Class: 114
       Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 12024}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12078}
     - Class: 114
-      Script: {instanceID: 12080}
+      Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 12378}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 12414}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 12674}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12912}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 13074}
     - Class: 114
-      Script: {instanceID: 13076}
+      Script: {instanceID: 13134}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13226}
     - Class: 114
-      Script: {instanceID: 13228}
+      Script: {instanceID: 13232}
     - Class: 114
-      Script: {instanceID: 13234}
+      Script: {instanceID: 13246}
     - Class: 114
-      Script: {instanceID: 13248}
-    - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13386}
     - Class: 114
       Script: {instanceID: 13576}
     - Class: 114
@@ -321,33 +334,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11770}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 12024}
     - Class: 114
-      Script: {instanceID: 12042}
+      Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12084}
+      Script: {instanceID: 12082}
     - Class: 114
-      Script: {instanceID: 12378}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12774}
     - Class: 114
-      Script: {instanceID: 12790}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 13388}
+      Script: {instanceID: 13386}
     - Class: 114
       Script: {instanceID: 13576}
     - Class: 114
@@ -424,29 +437,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11518}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11540}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11770}
+      Script: {instanceID: 11562}
     - Class: 114
-      Script: {instanceID: 11814}
+      Script: {instanceID: 11768}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11812}
     - Class: 114
-      Script: {instanceID: 12026}
+      Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 12378}
+      Script: {instanceID: 12024}
     - Class: 114
-      Script: {instanceID: 12456}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 12760}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12758}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 12774}
+    - Class: 114
+      Script: {instanceID: 13082}
+    - Class: 114
+      Script: {instanceID: 13386}
     - Class: 114
       Script: {instanceID: 13576}
     - Class: 114
@@ -455,6 +472,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13884}
     - Class: 114
       Script: {instanceID: 13948}
+    - Class: 114
+      Script: {instanceID: 13978}
     - Class: 114
       Script: {instanceID: 14034}
     - Class: 115
@@ -822,7 +841,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 13f34f9f502e38b67d58ce683d59426e
+      Hash: 1d6747c1f38c131a90ab2d4d644b2a0e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MovementFirstCar
@@ -924,7 +943,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 7223f233d753c64c4bf4316956a873c7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SecondCar
@@ -994,6 +1013,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CanvasButtons
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StopCars
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f

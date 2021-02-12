@@ -7,13 +7,13 @@ using Random = UnityEngine.Random;
 public class GameControl : MonoBehaviour
 {
     public GameObject[] maps;
-    public bool isMainScene;
+    public bool isMainScene;    
     public GameObject[] cars;
     public GameObject canvasLosePanel;
-    public float timeToSpawnFrom = 3f, timeToSpawnTo = 5f;
+    public float timeToSpawnFrom = 4f, timeToSpawnTo = 6f;
     private int countCars;
     private Coroutine bottomCars, leftCars, rightCars, upCars;
-    private bool isLoseOnce;// isPlaying;
+    private bool isLoseOnce;
     public Text nowScore, topScore, coinsCount;
     public GameObject horn;
     public AudioSource turnSignal;
@@ -56,17 +56,18 @@ public class GameControl : MonoBehaviour
 
         if (isMainScene)
         {
+            
             timeToSpawnFrom = 4f; 
             timeToSpawnTo = 6f;
 
         }
         bottomCars = StartCoroutine(BottomCars());
         leftCars = StartCoroutine(LeftCars());
-        rightCars = StartCoroutine(RightCars());
+        rightCars = StartCoroutine(RightCars()); 
         upCars = StartCoroutine(UpCars());
 
         StartCoroutine(CreateHorn());
-   }
+    }
     public void Update()
     {
         if (CarControl.isLose && !isLoseOnce)
@@ -88,18 +89,19 @@ public class GameControl : MonoBehaviour
             PlayerPrefs.SetInt("Coins", PlayerPrefs.GetInt("Coins") + CarControl.countCars);
             coinsCount.text = PlayerPrefs.GetInt("Coins").ToString();
 
-            
             instCars = 0;
             foreach (GameObject k in cars)
             {
-                k.GetComponent<CarControl>().speed = 7f;
-            }
+                k.GetComponent<CarControl>().speed = 6f;
+            }  
             x = 1;
         }        
-        if (instCars >= 10*x  ) {
+        if (instCars >= 10*x && !isMainScene ) {
             foreach (GameObject k in cars)            
-                k.GetComponent<CarControl>().speed += 2f;               
-            x++;                     
+                k.GetComponent<CarControl>().speed += 1.5f;               
+            x++;
+            timeToSpawnFrom -= 0.3f;
+            timeToSpawnTo -= 0.3f;
         }       
     }
    IEnumerator BottomCars() {

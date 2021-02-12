@@ -7,7 +7,7 @@ public class ChooseMap : MonoBehaviour
     {
 
         if (PlayerPrefs.GetString("music") != "No")
-            GetComponent<AudioSource>().clip = btnClick;
+            //GetComponent<AudioSource>().clip = btnClick;
             GetComponent<AudioSource>().Play();
 
         PlayerPrefs.SetInt("NowMap", numberMap);

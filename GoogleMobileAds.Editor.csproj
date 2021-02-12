@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{263BDC02-0C4D-0C38-78D9-1760E95B4EAD}</ProjectGuid>
+    <ProjectGuid>{1FDDE56D-6D7D-BF45-7E96-65CB443FB127}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>GoogleMobileAds.Editor</AssemblyName>
@@ -274,49 +274,49 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Editor">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
     </Reference>
     <Reference Include="Purchasing.Common">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
     </Reference>
     <Reference Include="Stores">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
     </Reference>
     <Reference Include="Apple">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
     </Reference>
     <Reference Include="AppleCore">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleCore.dll</HintPath>
     </Reference>
     <Reference Include="AppleMacos">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Apple/AppleMacos.dll</HintPath>
     </Reference>
     <Reference Include="FacebookStore">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
     </Reference>
     <Reference Include="Security">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
     </Reference>
     <Reference Include="winrt">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.162">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.162.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.162.dll</HintPath>
     </Reference>
     <Reference Include="Google.JarResolver_v1.2.162">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.162.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.JarResolver_v1.2.162.dll</HintPath>
     </Reference>
     <Reference Include="Google.PackageManagerResolver_v1.2.162">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.162.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.PackageManagerResolver_v1.2.162.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandler">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.VersionHandler.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.162">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.162.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.google.external-dependency-manager@1.2.162/ExternalDependencyManager/Editor/Google.VersionHandlerImpl_v1.2.162.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/instal unity/2019.4.13f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -679,21 +679,21 @@
       <HintPath>D:/instal unity/2019.4.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/user/Desktop/Project1/FastFoodCrash/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Project1/fast-food-drive/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GoogleMobileAds.csproj">
-      <Project>{8AC69BD1-A61A-59A6-D93B-DB235A0D9E95}</Project>
+      <Project>{B940F47F-8759-9040-5C6A-46F284131CCE}</Project>
       <Name>GoogleMobileAds</Name>
     </ProjectReference>
   </ItemGroup>

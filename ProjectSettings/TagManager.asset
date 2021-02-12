@@ -9,6 +9,7 @@ TagManager:
   - Delete Trigger
   - Trigger Pass
   - Car
+  - Stop
   layers:
   - Default
   - TransparentFX

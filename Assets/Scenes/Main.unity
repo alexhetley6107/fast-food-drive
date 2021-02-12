@@ -291,6 +291,8 @@ MonoBehaviour:
   musicOff: {fileID: 0}
   pauseOn: {fileID: 0}
   pauseOff: {fileID: 0}
+  homeBtn: {fileID: 0}
+  musBtn: {fileID: 0}
 --- !u!1 &22691415
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +477,8 @@ MonoBehaviour:
   musicOff: {fileID: 21300000, guid: 52f8c37d5759d7d48a7d811ada33d2cf, type: 3}
   pauseOn: {fileID: 0}
   pauseOff: {fileID: 0}
+  homeBtn: {fileID: 0}
+  musBtn: {fileID: 0}
 --- !u!114 &26740334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.46226418, g: 0.17225882, b: 0.17225882, a: 1}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
 --- !u!1 &169645706
@@ -779,7 +783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &169645707
 Transform:
   m_ObjectHideFlags: 0
@@ -788,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169645706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.4, y: 1.8, z: 11.2}
+  m_LocalPosition: {x: -17.5, y: 1.8, z: 11.2}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1770064776}
@@ -1423,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &845970408
 Transform:
   m_ObjectHideFlags: 0
@@ -1432,7 +1436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845970407}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.8, y: 1.8, z: 16.66}
+  m_LocalPosition: {x: -0.7, y: 1.8, z: 19.4}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1770064776}
@@ -1467,7 +1471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &873222274
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,7 +1480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 873222273}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -8.2, y: 1.8, z: -0.29}
+  m_LocalPosition: {x: -8.2, y: 1.8, z: -5.6}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1770064776}
@@ -2016,7 +2020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1311241292
 Transform:
   m_ObjectHideFlags: 0
@@ -2025,7 +2029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311241291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.11, y: 1.8, z: 3.9}
+  m_LocalPosition: {x: 7.42, y: 1.8, z: 3.9}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 1770064776}
@@ -2103,6 +2107,7 @@ GameObject:
   - component: {fileID: 1362313317}
   - component: {fileID: 1362313318}
   - component: {fileID: 1362313319}
+  - component: {fileID: 1362313320}
   m_Layer: 5
   m_Name: Play Button
   m_TagString: Untagged
@@ -2228,6 +2233,8 @@ MonoBehaviour:
   musicOff: {fileID: 0}
   pauseOn: {fileID: 0}
   pauseOff: {fileID: 0}
+  homeBtn: {fileID: 0}
+  musBtn: {fileID: 0}
 --- !u!114 &1362313318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2378,6 +2385,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1362313320
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362313312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 869e9da5355709349a08b5fb81922fc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1444195967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2888,6 +2914,8 @@ MonoBehaviour:
   musicOff: {fileID: 0}
   pauseOn: {fileID: 0}
   pauseOff: {fileID: 0}
+  homeBtn: {fileID: 0}
+  musBtn: {fileID: 0}
 --- !u!114 &1886143381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,7 +3233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.015000001, y: 0.06925854}
   m_AnchorMax: {x: 0.122500814, y: 0.238}
-  m_AnchoredPosition: {x: -1.7000122, y: -3.5}
+  m_AnchoredPosition: {x: -1.6999512, y: -3.5}
   m_SizeDelta: {x: -2.6352234, y: -6.174286}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2043011064
@@ -3306,6 +3334,8 @@ MonoBehaviour:
   musicOff: {fileID: 0}
   pauseOn: {fileID: 0}
   pauseOff: {fileID: 0}
+  homeBtn: {fileID: 0}
+  musBtn: {fileID: 0}
 --- !u!114 &2043011068
 MonoBehaviour:
   m_ObjectHideFlags: 0
